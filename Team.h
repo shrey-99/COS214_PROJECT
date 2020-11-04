@@ -2,6 +2,7 @@
 #define TEAM_H
 
 #include <string>
+#include "Driver.h"
 
 using namespace std;
 
@@ -13,7 +14,7 @@ private:
     //pitCrew
     //strategist
     //vehicle
-    //drivers
+    Driver drivers[2];
 
 public:
     Team(string, string);

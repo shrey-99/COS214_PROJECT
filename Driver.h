@@ -14,7 +14,7 @@ public:
 
 private:
     string name;
-    int points;
+    int points; //store driver points in the driver class
 };
 
 #endif
