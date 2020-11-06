@@ -11,3 +11,11 @@ Vehicle::Vehicle(int fuel) {
 Vehicle::~Vehicle() {
     
 }
+
+void Vehicle::setFuel(int f){
+    this->fuel = f;
+}
+
+int Vehicle::getFuel(){
+    return fuel;
+}
