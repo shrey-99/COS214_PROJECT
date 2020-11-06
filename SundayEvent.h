@@ -3,10 +3,12 @@
 
 #include "Event.h"
 #include "Command.h"
+#include "RacingLights.h"
 #include <iostream>
 
 class SundayEvent : public Event {
 private:
+    RacingLights* context;
     Command* start;
     Command* end;
 public:
