@@ -7,8 +7,8 @@
 
 class SundayEvent : public Event {
 private:
-	Command* start;
-	Command* end;
+    Command* start;
+    Command* end;
 public:
     SundayEvent(string, Command*, Command*);
     virtual void performEvent();
