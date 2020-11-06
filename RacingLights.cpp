@@ -26,7 +26,7 @@ void RacingLights::changeState()
 		delete light;
 		light=0;
 		light=holder;
-		this->light->displayLight();
+		//this->light->displayLight();
 	}
 	else
 	{
@@ -46,7 +46,7 @@ void RacingLights::automaticStateChange()
 		delete light;
 		light=0;
 		light= new RedLight("Red");
-		displayCurrentLight();
+		//displayCurrentLight();
 		changeState();
 		changeState();
 		
