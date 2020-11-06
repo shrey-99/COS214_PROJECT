@@ -2,16 +2,16 @@
 #define COMMAND_H
 #include <iostream>
 #include <string>
-#include "RemoteControlVehicle.h"
+#include "Vehicle.h"
 using namespace std;
 
 class Command
 {
 	private:
-		RemoteControlVehicle* receiver;
+		Vehicle* receiver;
 	public:	
-		Command(RemoteControlVehicle*);
-		RemoteControlVehicle* getReceiver();
+		Command(Vehicle*);
+		Vehicle* getReceiver();
 	
 		virtual ~Command();
 		virtual void execute() = 0;
