@@ -1,6 +1,6 @@
 #include "TurnOff.h"
 
-TurnOff::TurnOff(RemoteControlVehicle* r) : Command(r) // constructor 
+TurnOff::TurnOff(Vehicle* r) : Command(r) // constructor 
 {
 	
 }
