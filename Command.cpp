@@ -1,6 +1,6 @@
 #include "Command.h"
 
-Command::Command(RemoteControlVehicle* r) // constructor 
+Command::Command(Vehicle* r) // constructor 
 {
 	receiver = r;
 }
@@ -10,7 +10,7 @@ Command::~Command() // virtual
 	
 }
 
-RemoteControlVehicle* Command::getReceiver() 
+Vehicle* Command::getReceiver() 
 {
 	return receiver;
 }
