@@ -1,6 +1,6 @@
 #include "TurnOn.h"
 
-TurnOn::TurnOn(RemoteControlVehicle* r) : Command(r) // constructor 
+TurnOn::TurnOn(Vehicle* r) : Command(r) // constructor 
 {
 	
 }
