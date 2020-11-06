@@ -46,6 +46,10 @@ string RaceCar::getTyres() {
     return this->tyres;
 }
 
+int RaceCar::getTyreWare(){
+    return TyreWare;
+}
+
 void RaceCar::setAcceleration(int a) {
     acceleration = a;
 }
@@ -68,4 +72,8 @@ void RaceCar::setPosition(int pos) {
 
 void RaceCar::setTyres(string t) {
     tyres = t;
+}
+
+void RaceCar::setTyreWare(int tw){
+    TyreWare = tw;
 }
