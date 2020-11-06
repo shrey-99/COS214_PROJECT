@@ -14,6 +14,7 @@ private:
     int handling;
     int damage;
     int startingPosition;
+    int TyreWare;
 
 public:
     RaceCar();
@@ -26,6 +27,7 @@ public:
     int getDamage();
     int getPosition();
     string getTyres();
+    int getTyreWare();
 
     void setAcceleration(int);
     void setBraking(int);
@@ -33,6 +35,8 @@ public:
     void setDamage(int);
     void setPosition(int);
     void setTyres(string);
+    void setTyreWare(int);
+  
 
 };
 
