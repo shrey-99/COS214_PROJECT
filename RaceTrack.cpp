@@ -19,5 +19,21 @@ string RaceTrack :: getShape()
 {
 	return shape;
 }
+void RaceTrack :: setRaceTrackName(string name)
+{
+	RaceTrackName=name;
+}
+void RaceTrack ::setTyreCompund(string name)
+{
+	TyreCompound=name;
+}
+string RaceTrack::getRaceTrackkName()
+{
+	return RaceTrackName;
+}
+string 	RaceTrack :: TyreCompund()
+{
+	return TyreCompound;
+}
 
 
