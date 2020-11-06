@@ -1,6 +1,6 @@
 #include "RaceCar.h"
 
-RaceCar::RaceCar() {
+RaceCar::RaceCar() : Vehicle() {
     this->acceleration = 0;
     this->braking = 0;
     this->handling = 0;
@@ -9,7 +9,7 @@ RaceCar::RaceCar() {
     this->tyres = "No tyres set";
 }
 
-RaceCar::RaceCar(int fuel, string tyres, int a, int b, int h) : Vehicle(fuel){
+RaceCar::RaceCar(int fuel, string tyres, int a, int b, int h) : Vehicle(fuel) {
     this->acceleration = a;
     this->braking = b;
     this->handling = h;
@@ -76,4 +76,34 @@ void RaceCar::setTyres(string t) {
 
 void RaceCar::setTyreWare(int tw){
     TyreWare = tw;
+}
+
+void RaceCar::startEngine() 
+{
+	if (getState() == false)
+	{
+		setState(true); 
+		
+		cout << "F1 car is turned on." << endl;
+	}
+	else
+	{
+		cout << "F1 car is already on." << endl;
+	}
+	
+	//notify(); // observer pattern function - declared in parent class (Vehicle)
+}
+
+void RaceCar::stopEngine() 
+{
+	if (getState() == true)
+	{
+		setState(false); 
+		
+		cout << "F1 car is turned off." << endl;
+	}
+	else
+	{
+		cout << "F1 car is already off." << endl;
+	}
 }
