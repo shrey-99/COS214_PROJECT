@@ -39,7 +39,7 @@ public:
     
     // command pattern
     void startEngine();
-	void stopEngine();
+    void stopEngine();
 };
 
 #endif
