@@ -6,7 +6,7 @@ using namespace std;
 class TurnOff : public Command
 {
 	public:	
-		TurnOff(RemoteControlVehicle*);
+		TurnOff(Vehicle*);
 		~TurnOff();
 		void execute();
 		void undo();
