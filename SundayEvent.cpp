@@ -1,6 +1,7 @@
 #include "SundayEvent.h"
 
 SundayEvent::SundayEvent(string name, Command* s, Command* e) : Event(name) {
+    context = new RacingLights();
     start = s;
     end = e;
 }
@@ -16,9 +17,9 @@ void SundayEvent::race() {
 void SundayEvent::startRace() 
 {
 	start->execute();
-	//context->request(); // change state
 	//context->setState(new GreenLightState());
-	cout << "Light is " << context->getColour() << "." << endl;
+	context->automaticStateChange(); // should change state to green light state from initial red light state.
+	cout << "Light is " << context->displayCurrentLight() << "." << endl;
     
     race();
 }
@@ -27,6 +28,7 @@ void SundayEvent::endRace()
 {
 	end->execute();
 	//context->setState(new RedLightState());
-	cout << "Light is " << context->getColour() << ", we have reached the end of the race." << endl;
+	context->automaticStateChange(); // should change state to red light state from current green light state.
+	cout << "Light is " << context->displayCurrentLight() << ", we have reached the end of the race." << endl;
 }
 
