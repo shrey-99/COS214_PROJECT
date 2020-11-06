@@ -21,7 +21,7 @@ void SundayEvent::startRace()
 	context->automaticStateChange(); // should change state to green light state from initial red light state.
 	cout << "Light is " << context->displayCurrentLight() << "." << endl;
     
-    race();
+    	race();
 }
 
 void SundayEvent::endRace() 
