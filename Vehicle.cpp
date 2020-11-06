@@ -1,6 +1,7 @@
 #include "Vehicle.h"
 
 Vehicle::Vehicle() {
+    this->isOnState = false;
     this->fuel = 0;
 }
 
@@ -18,4 +19,14 @@ void Vehicle::setFuel(int f){
 
 int Vehicle::getFuel(){
     return fuel;
+}
+
+void Vehicle::setState(bool s) 
+{
+	isOnState = s;
+}
+
+bool Vehicle::getState() 
+{
+	return isOnState;
 }
