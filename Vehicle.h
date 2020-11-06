@@ -12,6 +12,8 @@ public:
     Vehicle();
     Vehicle(int);
     ~Vehicle();
+    int getFuel();
+    void setFuel();
 
 };
 
