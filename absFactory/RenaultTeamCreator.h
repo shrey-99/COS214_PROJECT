@@ -1,8 +1,9 @@
-#ifndef RENAULTTEAMCREATOR2_H
-#define RENAULTTEAMCREATOR2_H
+#ifndef RENAULTTEAMCREATOR_H
+#define RENAULTTEAMCREATOR_H
 
-class RenaultTeamCreator2 : Factory2 {
+#include "Factory.h"
 
+class RenaultTeamCreator : Factory {
 
 public:
 	Team* createTeam();

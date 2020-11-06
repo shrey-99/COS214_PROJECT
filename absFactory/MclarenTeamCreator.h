@@ -1,9 +1,9 @@
-#ifndef MCLARENTEAMCREATOR2_H
-#define MCLARENTEAMCREATOR2_H
+#ifndef MCLARENTEAMCREATOR_H
+#define MCLARENTEAMCREATOR_H
 
-class MclarenTeamCreator2 : Factory2 {
+#include "Factory.h"
 
-
+class MclarenTeamCreator : Factory {
 public:
 	Team* createTeam();
 

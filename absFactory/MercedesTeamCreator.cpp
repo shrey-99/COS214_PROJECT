@@ -1,11 +1,17 @@
-#include "MercedesTeamCreator2.h"
+#include "MercedesTeamCreator.h"
+#include "MercedesTeam.h"
+#include "RaceCar.h"
 
-Team* MercedesTeamCreator2::createTeam() {
+Team* MercedesTeamCreator::createTeam() {
 	// TODO - implement MercedesTeamCreator2::createTeam
-	throw "Not yet implemented";
+	return new MercedesTeam();
 }
 
-Vehicle* MercedesTeamCreator2::createRaceCar() {
+Vehicle* MercedesTeamCreator::createRaceCar() {
 	// TODO - implement MercedesTeamCreator2::createRaceCar
-	throw "Not yet implemented";
+	Vehicle* cars[2];
+	for(int i=0; i < 2; i++) {
+		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+	}
+	return *cars;
 }

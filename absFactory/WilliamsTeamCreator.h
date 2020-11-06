@@ -1,7 +1,7 @@
-#ifndef WILLIAMSTEAMCREATOR2_H
-#define WILLIAMSTEAMCREATOR2_H
-
-class WilliamsTeamCreator2 : Factory2 {
+#ifndef WILLIAMSTEAMCREATOR_H
+#define WILLIAMSTEAMCREATOR_H
+#include "Factory.h"
+class WilliamsTeamCreator : Factory {
 
 
 public:

@@ -1,11 +1,17 @@
-#include "AlphaTauriTeamCreator2.h"
+#include "AlphaTauriTeamCreator.h"
+#include "AlphaTauriTeam.h"
+#include "RaceCar.h"
 
-Team* AlphaTauriTeamCreator2::createTeam() {
+Team* AlphaTauriTeamCreator::createTeam() {
 	// TODO - implement AlphaTauriTeamCreator2::createTeam
-	throw "Not yet implemented";
+	return new AlphaTauriTeam();
 }
 
-Vehicle* AlphaTauriTeamCreator2::createRaceCar() {
+Vehicle* AlphaTauriTeamCreator::createRaceCar() {
 	// TODO - implement AlphaTauriTeamCreator2::createRaceCar
-	throw "Not yet implemented";
+	Vehicle* cars[2];
+	for(int i=0; i < 2; i++) {
+		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+	}
+	return *cars;
 }

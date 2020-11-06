@@ -1,9 +1,9 @@
 #ifndef ALPHAROMEOTEAMCREATOR_H
 #define ALPHAROMEOTEAMCREATOR_H
 
-class AlphaRomeoTeamCreator : Factory {
+#include "Factory.h"
 
-
+class AlphaRomeoTeamCreator : public Factory {
 public:
 	Team* createTeam();
 

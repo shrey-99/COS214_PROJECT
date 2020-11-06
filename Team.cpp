@@ -7,3 +7,7 @@ Team::Team(string name, string season) {
 
 void Team::addEngineer() {
 }
+
+string Team::getName() {
+    return this->teamName;
+}

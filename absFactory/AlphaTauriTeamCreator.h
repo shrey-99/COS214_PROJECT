@@ -1,7 +1,9 @@
-#ifndef ALPHATAURITEAMCREATOR2_H
-#define ALPHATAURITEAMCREATOR2_H
+#ifndef ALPHATAURITEAMCREATOR_H
+#define ALPHATAURITEAMCREATOR_H
 
-class AlphaTauriTeamCreator2 : Factory2 {
+#include "Factory.h"
+
+class AlphaTauriTeamCreator : Factory {
 
 
 public:

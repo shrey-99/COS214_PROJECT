@@ -1,7 +1,9 @@
-#ifndef HAASTEAMCREATOR2_H
-#define HAASTEAMCREATOR2_H
+#ifndef HAASTEAMCREATOR_H
+#define HAASTEAMCREATOR_H
 
-class HaasTeamCreator2 : Factory2 {
+#include "Factory.h"
+
+class HaasTeamCreator : Factory {
 
 
 public:

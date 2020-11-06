@@ -19,6 +19,7 @@ private:
 public:
     Team(string, string);
     void addEngineer();
+    string getName();
 };
 
 #endif

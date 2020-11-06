@@ -1,7 +1,9 @@
-#ifndef MERCEDESTEAMCREATOR2_H
-#define MERCEDESTEAMCREATOR2_H
+#ifndef MERCEDESTEAMCREATOR_H
+#define MERCEDESTEAMCREATOR_H
 
-class MercedesTeamCreator2 : Factory2 {
+#include "Factory.h"
+
+class MercedesTeamCreator : Factory {
 
 
 public:

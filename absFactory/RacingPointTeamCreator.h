@@ -1,9 +1,9 @@
-#ifndef RACINGPOINTTEAMCREATOR2_H
-#define RACINGPOINTTEAMCREATOR2_H
+#ifndef RACINGPOINTTEAMCREATOR_H
+#define RACINGPOINTTEAMCREATOR_H
 
-class RacingPointTeamCreator2 : Factory2 {
+#include "Factory.h"
 
-
+class RacingPointTeamCreator : Factory {
 public:
 	Team* createTeam();
 

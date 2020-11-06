@@ -1,11 +1,17 @@
-#include "RenaultTeamCreator2.h"
+#include "RenaultTeamCreator.h"
+#include "RenaultTeam.h"
+#include "RaceCar.h"
 
-Team* RenaultTeamCreator2::createTeam() {
+Team* RenaultTeamCreator::createTeam() {
 	// TODO - implement RenaultTeamCreator2::createTeam
-	throw "Not yet implemented";
+	return new RenaultTeam();
 }
 
-Vehicle* RenaultTeamCreator2::createRaceCar() {
+Vehicle* RenaultTeamCreator::createRaceCar() {
 	// TODO - implement RenaultTeamCreator2::createRaceCar
-	throw "Not yet implemented";
+	Vehicle* cars[2];
+	for(int i=0; i < 2; i++) {
+		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+	}
+	return *cars;
 }

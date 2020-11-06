@@ -1,11 +1,17 @@
 #include "FerrariTeamCreator.h"
+#include "FerrariTeam.h"
+#include "RaceCar.h"
 
-Team* FerrariTeamCreator2::createTeam() {
+Team* FerrariTeamCreator::createTeam() {
 	// TODO - implement FerrariTeamCreator2::createTeam
-	throw "Not yet implemented";
+	return new FerrariTeam();
 }
 
-Vehicle* FerrariTeamCreator2::createRaceCar() {
+Vehicle* FerrariTeamCreator::createRaceCar() {
 	// TODO - implement FerrariTeamCreator2::createRaceCar
-	throw "Not yet implemented";
+	Vehicle* cars[2];
+	for(int i=0; i < 2; i++) {
+		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+	}
+	return *cars;
 }

@@ -1,9 +1,9 @@
-#ifndef REDBULLTEAMCREATOR2_H
-#define REDBULLTEAMCREATOR2_H
+#ifndef REDBULLTEAMCREATOR_H
+#define REDBULLTEAMCREATOR_H
 
-class RedBullTeamCreator2 : Factory2 {
+#include "Factory.h"
 
-
+class RedBullTeamCreator : Factory {
 public:
 	Team* createTeam();
 

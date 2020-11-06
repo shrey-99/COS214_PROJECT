@@ -1,11 +1,18 @@
-#include "MclarenTeamCreator2.h"
+#include "MclarenTeamCreator.h"
+#include "MclarenTeam.h"
+#include "RaceCar.h"
 
-Team* MclarenTeamCreator2::createTeam() {
+
+Team* MclarenTeamCreator::createTeam() {
 	// TODO - implement MclarenTeamCreator2::createTeam
-	throw "Not yet implemented";
+	return new MclarenTeam();
 }
 
-Vehicle* MclarenTeamCreator2::createRaceCar() {
+Vehicle* MclarenTeamCreator::createRaceCar() {
 	// TODO - implement MclarenTeamCreator2::createRaceCar
-	throw "Not yet implemented";
+	Vehicle* cars[2];
+	for(int i=0; i < 2; i++) {
+		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+	}
+	return *cars;
 }

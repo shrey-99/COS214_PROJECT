@@ -1,7 +1,9 @@
-#ifndef FERRARITEAMCREATOR2_H
-#define FERRARITEAMCREATOR2_H
+#ifndef FERRARITEAMCREATOR_H
+#define FERRARITEAMCREATOR_H
 
-class FerrariTeamCreator2 : Factory2 {
+#include "Factory.h"
+
+class FerrariTeamCreator : Factory {
 
 
 public:

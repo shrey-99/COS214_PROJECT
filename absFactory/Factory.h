@@ -1,12 +1,10 @@
-#ifndef FACTORY2_H
-#define FACTORY2_H
+#ifndef FACTORY_H
+#define FACTORY_H
+
+#include "Team.h"
+#include "Vehicle.h"
 
 class Factory {
-
-private:
-	Team* team;
-	Vehicle racecars[];
-
 public:
 	virtual Team* createTeam() = 0;
 
