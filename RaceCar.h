@@ -40,6 +40,8 @@ public:
     // command pattern
     void startEngine();
     void stopEngine();
+    void notify(observer*);
+    
 };
 
 #endif
