@@ -13,6 +13,7 @@ public:
     Event(string);
     ~Event();
     virtual void performEvent() = 0;
+    vector<Team*> getTeam();
 
 private:
     string eventName;
