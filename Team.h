@@ -17,7 +17,7 @@ private:
     vector<Engineer*> engineers //engineers
     observer* pitcrew;//pitCrew
     Strategist* s; //strategist
-    Vehicle* car[2];//vehicle
+    Vehicle* cars[2];//vehicle
     Vehicle* truck;
     string Equipment[5]; 
     Driver* drivers[2];
