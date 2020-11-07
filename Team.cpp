@@ -3,7 +3,7 @@
 Team::Team(Location* loc, string name, string season) {
     this->teamName = name;
     this->season = season;
-    //s = new Strategist("", loc);
+    s = new Strategist("John Murphy", loc);
     
     // equipement
     Equipment[0] = "";
