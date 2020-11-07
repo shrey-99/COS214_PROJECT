@@ -115,6 +115,6 @@ void RaceCar::stopEngine()
 }
 
 void RaceCar::notify(observer* pit){
-	pit->getCar(this);
+	pit->getcar(this);
 	pit->checkVehicle();
 }
