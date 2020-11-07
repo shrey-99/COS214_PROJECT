@@ -13,7 +13,7 @@ RaceCar::RaceCar(int fuel, string tyres, int a, int b, int h) : Vehicle(fuel) {
     this->acceleration = a;
     this->braking = b;
     this->handling = h;
-    this->damage = 0;
+    this->damage = b/h;
     this->startingPosition = 0;
     this->tyres = tyres;
     this->TyreWare = 0;
@@ -65,6 +65,11 @@ void RaceCar::setHandling(int h) {
 
 void RaceCar::setDamage(int d) {
     damage = d;
+}
+
+void RaceCar::updateDamage() {
+  int d = getFuel()/TyreWare;
+  setDamage(d);
 }
 
 void RaceCar::setPosition(int pos) {
