@@ -20,12 +20,14 @@ private:
     Vehicle* car[2];//vehicle
     Vehicle* truck;
     string Equipment[5]; 
-    Driver drivers[2];
+    Driver* drivers[2];
 
 public:
     Team(Location*, string, string);
     void addEngineer();
     string getName();
+    Vehicle* getCars();
+    Driver* getDrivers();
 };
 
 #endif
