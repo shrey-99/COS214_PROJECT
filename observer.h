@@ -8,7 +8,7 @@ using namespace std;
 class observer {
 public:
     virtual void checkVehicle() = 0;
-    virtual void getcar(RaaceCar*) =0;
+    virtual void getcar(RaceCar*) =0;
 
 };
 
