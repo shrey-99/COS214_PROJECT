@@ -19,9 +19,9 @@ public:
     void setFuel(int);
     
     virtual ~Vehicle();
-    virtual void startEngine();
-    virtual void stopEngine();
-    virtual void notify(observer*); // called in car's startEngine function
+    virtual void startEngine(){};
+    virtual void stopEngine(){};
+    virtual void notify(observer*){}; // called in car's startEngine function
 };
 
 #endif
