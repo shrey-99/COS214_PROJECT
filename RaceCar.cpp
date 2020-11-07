@@ -16,6 +16,7 @@ RaceCar::RaceCar(int fuel, string tyres, int a, int b, int h) : Vehicle(fuel) {
     this->damage = 0;
     this->startingPosition = 0;
     this->tyres = tyres;
+    this->TyreWare = 0;
 }
 
 RaceCar::~RaceCar() {
@@ -78,6 +79,11 @@ void RaceCar::setTyreWare(int tw){
     TyreWare = tw;
 }
 
+int RaceCar::calculateTime() {
+	int sec = (acceleration + braking + handling + damage)/TyreWare;
+	return sec;
+}
+
 void RaceCar::startEngine() 
 {
 	if (getState() == false)
@@ -106,4 +112,9 @@ void RaceCar::stopEngine()
 	{
 		cout << "F1 car is already off." << endl;
 	}
+}
+
+void RaceCar::notify(observer* pit){
+	pit->getCar(this);
+	pit->checkVehicle();
 }
