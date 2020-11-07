@@ -1,8 +1,16 @@
 #include "Team.h"
 
-Team::Team(string name, string season) {
+Team::Team(Location* loc, string name, string season) {
     this->teamName = name;
     this->season = season;
+    //s = new Strategist("", loc);
+    
+    // equipement
+    Equipment[0] = "";
+    Equipment[1] = "";
+    Equipment[2] = "";
+    Equipment[3] = "";
+    Equipment[4] = "";
 }
 
 void Team::addEngineer() {
