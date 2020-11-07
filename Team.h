@@ -3,6 +3,10 @@
 
 #include <string>
 #include "Driver.h"
+#include "Engineer.h"
+#include "observer.h"
+#include "Vehicle.h"
+#include "Strategy.h"
 
 using namespace std;
 
@@ -10,10 +14,12 @@ class Team {
 private:
     string teamName;
     string season;
-    //engineers
-    //pitCrew
+    vector<Engineer*> engineers //engineers
+    observer* pitcrew;//pitCrew
     //strategist
-    //vehicle
+    Vehicle* car[2];//vehicle
+    Vehicle* truck;
+    string Equipment[5]; 
     Driver drivers[2];
 
 public:
