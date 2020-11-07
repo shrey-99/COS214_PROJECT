@@ -19,3 +19,11 @@ void Team::addEngineer() {
 string Team::getName() {
     return this->teamName;
 }
+
+Vehicle* Team::getCars(){
+    return *cars;
+}
+
+Driver* Team::getDrivers(){
+    return *drivers;
+}
