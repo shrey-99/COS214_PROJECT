@@ -2,6 +2,7 @@
 #define VEHICLE_H
 
 #include <string>
+#include "observer.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ public:
     virtual ~Vehicle();
     virtual void startEngine();
     virtual void stopEngine();
-    //virtual void notify(); // called in car's startEngine function
+    virtual void notify(observer*); // called in car's startEngine function
 };
 
 #endif
