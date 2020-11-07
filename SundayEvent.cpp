@@ -7,7 +7,7 @@ SundayEvent::SundayEvent(string name, Command* s, Command* e) : Event(name) {
 }
 
 void SundayEvent::performEvent() {
-    this->race();
+    this->startRace();
 }
 
 void SundayEvent::race() {
