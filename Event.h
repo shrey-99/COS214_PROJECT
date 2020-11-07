@@ -16,6 +16,8 @@ public:
 
 private:
     string eventName;
+    
+protected:
     vector<Team*> teams;
     
 
