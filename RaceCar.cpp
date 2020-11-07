@@ -114,6 +114,11 @@ void RaceCar::stopEngine()
 	}
 }
 
+
+/*
+	* call notify() after every 10 laps
+	* to refuel the car after every 10 laps
+*/
 void RaceCar::notify(observer* pit){
 	pit->getcar(this);
 	pit->checkVehicle();
