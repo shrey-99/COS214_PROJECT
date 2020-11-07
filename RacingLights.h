@@ -18,6 +18,7 @@ private:
 public:
     RacingLights();
     ~RacingLights();
+    void setState(State*);
     void changeState(); // request method : when using this method it will only progress to the next state eg. RedLight to YellowLight
     void automaticStateChange(); //when using this method it will change the state from RedLight to Yellow to GreenLight automatically.
     void displayCurrentLight();
