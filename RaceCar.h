@@ -36,7 +36,7 @@ public:
     void setPosition(int);
     void setTyres(string);
     void setTyreWare(int);
-    
+    int calculateTime();
     // command pattern
     void startEngine();
     void stopEngine();
