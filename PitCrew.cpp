@@ -1,8 +1,14 @@
 #include "PitCrew.h"
 
+/*
+  * code something to minus fuel (in race() )
+  * if damage 0; check inside race(); give 0 points; i.e last place 
+
+*/
+
 
 void PitCrew::checkVehicle(){
-  if (car->getDamage() == 0) {
+  if (car->getDamage() <= 0) {
     cout<<"Car is damaged beyond repair gains zero points"<<endl;
   }else {
     if (car->getFuel() <=200){
