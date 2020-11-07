@@ -33,5 +33,5 @@ void Team::setCars(Vehicle* v){
 }
 
 void Team::setDrivers(Driver* d){
-    driver = d;
+    drivers = d;
 }
