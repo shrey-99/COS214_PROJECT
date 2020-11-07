@@ -6,7 +6,7 @@
 #include "Engineer.h"
 #include "observer.h"
 #include "Vehicle.h"
-#include "Strategy.h"
+#include "Strategist.h"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ private:
     string season;
     vector<Engineer*> engineers //engineers
     observer* pitcrew;//pitCrew
-    //strategist
+    Strategist* s; //strategist
     Vehicle* car[2];//vehicle
     Vehicle* truck;
     string Equipment[5]; 
