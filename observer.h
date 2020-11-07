@@ -2,7 +2,7 @@
 #define OBSERVER_H
 
 #include <string>
-#include "RaceCar.h"
+class RaceCar;
 using namespace std;
 
 class observer {
