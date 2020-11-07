@@ -61,5 +61,10 @@ void RacingLights::automaticStateChange()
 
 void RacingLights::setState(State* s) 
 {
-	state = s;
+	if(light!=NULL)
+	{
+		delete light;
+		light=0;
+	}
+	light = s;
 }
