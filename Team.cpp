@@ -27,3 +27,11 @@ Vehicle* Team::getCars(){
 Driver* Team::getDrivers(){
     return *drivers;
 }
+
+void Team::setCars(Vehicle* v){
+    cars = v;
+}
+
+void Team::setDrivers(Driver* d){
+    driver = d;
+}
