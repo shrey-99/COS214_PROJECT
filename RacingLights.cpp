@@ -58,3 +58,8 @@ void RacingLights::automaticStateChange()
 	}
 		
 }
+
+void RacingLights::setState(State* s) 
+{
+	state = s;
+}
