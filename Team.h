@@ -23,7 +23,7 @@ private:
     Driver drivers[2];
 
 public:
-    Team(string, string);
+    Team(Location*, string, string);
     void addEngineer();
     string getName();
 };
