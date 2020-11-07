@@ -41,7 +41,7 @@ public:
     void startEngine();
     void stopEngine();
     void notify(observer*);
-    
+    void updateDamage();
 };
 
 #endif
