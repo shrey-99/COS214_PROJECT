@@ -13,10 +13,10 @@ RaceCar::RaceCar(int fuel, string tyres, int a, int b, int h) : Vehicle(fuel) {
     this->acceleration = a;
     this->braking = b;
     this->handling = h;
-    this->damage = b/h;
+    this->damage = fuel;
     this->startingPosition = 0;
     this->tyres = tyres;
-    this->TyreWare = 0;
+    this->TyreWare = 1;
 }
 
 RaceCar::~RaceCar() {
