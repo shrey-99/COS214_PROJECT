@@ -11,3 +11,7 @@ Event::~Event() {
 void Event::performEvent() {
     
 }
+
+vector<Team*> Event::getTeam() {
+    return teams;
+}
