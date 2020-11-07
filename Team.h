@@ -28,6 +28,8 @@ public:
     string getName();
     Vehicle* getCars();
     Driver* getDrivers();
+    void setCars(Vehicle*);
+    void setDrivers(Driver*);
 };
 
 #endif
