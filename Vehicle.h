@@ -2,6 +2,7 @@
 #define VEHICLE_H
 
 #include <string>
+#include <iostream>
 #include "observer.h"
 
 using namespace std;
