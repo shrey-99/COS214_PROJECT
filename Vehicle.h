@@ -26,6 +26,7 @@ public:
     virtual int calculateTime(){return 0;};
     virtual void increaseSpecs(){};
     virtual void setPosition(int){};
+    virtual void updateDamage(){};
 };
 
 #endif
