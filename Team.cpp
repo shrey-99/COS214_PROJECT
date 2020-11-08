@@ -29,11 +29,11 @@ Driver* Team::getDrivers(){
 }
 
 void Team::setCars(Vehicle* v){
-    cars = v;
+    *cars = v;
 }
 
 void Team::setDrivers(Driver* d){
-    drivers = d;
+    *drivers = d;
 }
 
 void Team::notify(){

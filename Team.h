@@ -14,7 +14,7 @@ class Team {
 private:
     string teamName;
     string season;
-    vector<Engineer*> engineers //engineers
+    vector<Engineer*> engineers; //engineers
     observer* pitcrew;//pitCrew
     Strategist* s; //strategist
     Vehicle* cars[2];//vehicle
