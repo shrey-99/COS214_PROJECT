@@ -1,5 +1,5 @@
 #include "FerrariTeam.h"
 
-FerrariTeam::FerrariTeam() : Team("Ferrari", "1") {
+FerrariTeam::FerrariTeam(Location* l) : Team(l, "Ferrari", "1") {
 
 }

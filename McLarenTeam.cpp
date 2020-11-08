@@ -1,5 +1,5 @@
 #include "McLarenTeam.h"
 
-McLarenTeam::McLarenTeam() : Team("McLaren", "1") {
+McLarenTeam::McLarenTeam(Location* l) : Team(l, "McLaren", "1") {
 
 }

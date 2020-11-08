@@ -1,5 +1,5 @@
 #include "MercedesTeam.h"
 
-MercedesTeam::MercedesTeam() : Team("Mercedes", "1") {
+MercedesTeam::MercedesTeam(Location* l) : Team(l, "Mercedes", "1") {
 
 }

@@ -1,5 +1,5 @@
 #include "WilliamsTeam.h"
 
-WilliamsTeam::WilliamsTeam() : Team("Williams", "1") {
+WilliamsTeam::WilliamsTeam(Location* l) : Team(l, "Williams", "1") {
 
 }

@@ -1,5 +1,5 @@
 #include "RenaultTeam.h"
 
-RenaultTeam::RenaultTeam() : Team("Renault", "1") {
+RenaultTeam::RenaultTeam(Location* l) : Team(l, "Renault", "1") {
 
 }

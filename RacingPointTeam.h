@@ -7,7 +7,7 @@ using namespace std;
 
 class RacingPointTeam : public Team {
 public:
-    RacingPointTeam();
+    RacingPointTeam(Location*);
 };
 
 #endif

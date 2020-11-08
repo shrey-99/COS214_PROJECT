@@ -1,5 +1,5 @@
 #include "RacingPointTeam.h"
 
-RacingPointTeam::RacingPointTeam() : Team("Racing Point", "1") {
+RacingPointTeam::RacingPointTeam(Location* l) : Team(l, "Racing Point", "1") {
 
 }

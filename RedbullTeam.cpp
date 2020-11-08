@@ -1,5 +1,5 @@
 #include "RedbullTeam.h"
 
-RedbullTeam::RedbullTeam() : Team("RedBull", "1") {
+RedbullTeam::RedbullTeam(Location* l) : Team(l, "RedBull", "1") {
 
 }

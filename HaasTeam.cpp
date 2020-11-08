@@ -1,5 +1,5 @@
 #include "HaasTeam.h"
 
-HaasTeam::HaasTeam() : Team("Haas", "1") {
+HaasTeam::HaasTeam(Location* l) : Team(l, "Haas", "1") {
 
 }

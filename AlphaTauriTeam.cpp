@@ -1,5 +1,5 @@
 #include "AlphaTauriTeam.h"
 
-AlphaTauriTeam::AlphaTauriTeam() : Team("AlphaTauri", "1") {
+AlphaTauriTeam::AlphaTauriTeam(Location* l) : Team(l, "AlphaTauri", "1") {
 
 }
