@@ -22,7 +22,7 @@ public:
     virtual ~Vehicle();
     virtual void startEngine(){};
     virtual void stopEngine(){};
-    virtual void notify(observer*){}; // called in car's startEngine function
+    virtual void notify(observer*){};
     virtual int calculateTime(){};
     virtual void increaseSpecs(){};
     virtual void setPosition(int){};
