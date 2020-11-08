@@ -9,6 +9,7 @@ using namespace std;
 class AlphaRomeoTeam : public Team {
 public:
     AlphaRomeoTeam(Location*);
+    void notify();
 };
 
 #endif
