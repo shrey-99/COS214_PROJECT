@@ -24,6 +24,8 @@ Team::~Team() {
         delete drivers[i];
         delete cars[i];
     }
+    delete drivers;
+    delete cars;
 }
 
 void Team::addEngineer() {

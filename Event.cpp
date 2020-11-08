@@ -5,7 +5,9 @@ Event::Event(string name) {
 }
 
 Event::~Event() {
-    
+    for(int i=0; i < teams.size(); i++) {
+        delete teams[i];
+    }
 }
 
 void Event::performEvent() {
