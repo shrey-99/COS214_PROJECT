@@ -101,8 +101,6 @@ void RaceCar::startEngine()
 	{
 		cout << "F1 car is already on." << endl;
 	}
-	
-	//notify(); // observer pattern function - declared in parent class (Vehicle)
 }
 
 void RaceCar::stopEngine() 
