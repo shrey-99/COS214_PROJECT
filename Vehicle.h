@@ -23,6 +23,8 @@ public:
     virtual void startEngine(){};
     virtual void stopEngine(){};
     virtual void notify(observer*){}; // called in car's startEngine function
+    virtual int calculateTime(){};
+    virtual void increaseSpecs(){};
 };
 
 #endif
