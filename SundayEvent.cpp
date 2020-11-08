@@ -11,6 +11,7 @@ void SundayEvent::performEvent() {
 }
 
 void SundayEvent::race() {
+    cout << getFlags()[0] << endl;
     cout << "The race has begun!" << endl;
 }
 
