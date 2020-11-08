@@ -24,6 +24,7 @@ class GrandPrix
 	public:
 		GrandPrix();
 		~GrandPrix();
+		string* getFlags();
 		void setLocation(Location*);
 		virtual void race()=0;
 };
