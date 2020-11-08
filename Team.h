@@ -2,6 +2,7 @@
 #define TEAM_H
 
 #include <string>
+#include <vector>
 #include "Driver.h"
 #include "Engineer.h"
 #include "observer.h"
@@ -16,7 +17,7 @@ private:
     string season;
     vector<Engineer*> engineers; //engineers
     observer* pitcrew;//pitCrew
-    Strategist* s; //strategist
+    Strategist* strategist; //strategist
     Vehicle* cars[2];//vehicle
     Vehicle* truck;
     string Equipment[5]; 
@@ -24,6 +25,7 @@ private:
 
 public:
     Team(Location*, string, string);
+    ~Team();
     void addEngineer();
     string getName();
     Vehicle* getCars();

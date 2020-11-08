@@ -3,7 +3,7 @@
 Team::Team(Location* loc, string name, string season) {
     this->teamName = name;
     this->season = season;
-    s = new Strategist("John Murphy", loc);
+    strategist = new Strategist("John Murphy", loc);
     
     // equipement
     Equipment[0] = "";
@@ -11,6 +11,19 @@ Team::Team(Location* loc, string name, string season) {
     Equipment[2] = "";
     Equipment[3] = "";
     Equipment[4] = "";
+}
+
+Team::~Team() {
+    for(int i=0; i < engineers.size(); i++) {
+        delete engineers[i];
+    }
+    delete pitcrew;
+    delete strategist;
+    delete truck;
+    for(int i=0; i < 2; i++) {
+        delete drivers[i];
+        delete cars[i];
+    }
 }
 
 void Team::addEngineer() {
