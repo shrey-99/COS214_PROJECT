@@ -18,20 +18,20 @@ private:
     vector<Engineer*> engineers; //engineers
     observer* pitcrew;//pitCrew
     Strategist* strategist; //strategist
-    Vehicle* cars[2];//vehicle
+    Vehicle** cars;//vehicle
     Vehicle* truck;
     string Equipment[5]; 
-    Driver* drivers[2];
+    Driver** drivers;
 
 public:
     Team(Location*, string, string);
     ~Team();
     void addEngineer();
     string getName();
-    Vehicle* getCars();
-    Driver* getDrivers();
-    void setCars(Vehicle*);
-    void setDrivers(Driver*);
+    Vehicle** getCars();
+    Driver** getDrivers();
+    void setCars(Vehicle**);
+    void setDrivers(Driver**);
     virtual void notify();
 };
 

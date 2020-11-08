@@ -7,11 +7,11 @@ Team* AlphaTauriTeamCreator::createTeam() {
 	return new AlphaTauriTeam();
 }
 
-Vehicle* AlphaTauriTeamCreator::createRaceCar() {
+Vehicle** AlphaTauriTeamCreator::createRaceCar() {
 	// TODO - implement AlphaTauriTeamCreator2::createRaceCar
-	Vehicle* cars[2];
+	Vehicle** cars = new Vehicle*[2];
 	for(int i=0; i < 2; i++) {
 		cars[i] = new RaceCar(100, "NULL", 40, 35, 42);
 	}
-	return *cars;
+	return cars;
 }

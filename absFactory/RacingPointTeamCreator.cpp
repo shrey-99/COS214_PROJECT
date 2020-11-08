@@ -7,11 +7,11 @@ Team* RacingPointTeamCreator::createTeam() {
 	return new RacingPointTeam();
 }
 
-Vehicle* RacingPointTeamCreator::createRaceCar() {
-	// TODO - implement RacingPointTeamCreator2::createRaceCar
-	Vehicle* cars[2];
+Vehicle** RacingPointTeamCreator::createRaceCar() {
+	// TODO - implement FerrariTeamCreator2::createRaceCar
+	Vehicle** cars = new Vehicle*[2];
 	for(int i=0; i < 2; i++) {
-		cars[i] = new RaceCar(100, "NULL", 51, 48, 55);
+		cars[i] = new RaceCar(100, "NULL", 63, 65, 61);
 	}
-	return *cars;
+	return cars;
 }

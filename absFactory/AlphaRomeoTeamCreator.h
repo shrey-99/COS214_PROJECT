@@ -7,7 +7,7 @@ class AlphaRomeoTeamCreator : public Factory {
 public:
 	Team* createTeam();
 
-	Vehicle* createRaceCar();
+	Vehicle** createRaceCar();
 };
 
 #endif

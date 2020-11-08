@@ -3,13 +3,13 @@
 
 #include "Factory.h"
 
-class FerrariTeamCreator : Factory {
+class FerrariTeamCreator : public Factory {
 
 
 public:
 	Team* createTeam();
 
-	Vehicle* createRaceCar();
+	Vehicle** createRaceCar();
 };
 
 #endif

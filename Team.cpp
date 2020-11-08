@@ -35,20 +35,20 @@ string Team::getName() {
     return this->teamName;
 }
 
-Vehicle* Team::getCars(){
-    return *cars;
+Vehicle** Team::getCars(){
+    return cars;
 }
 
-Driver* Team::getDrivers(){
-    return *drivers;
+Driver** Team::getDrivers(){
+    return drivers;
 }
 
-void Team::setCars(Vehicle* v){
-    *cars = v;
+void Team::setCars(Vehicle** v){
+    cars = v;
 }
 
-void Team::setDrivers(Driver* d){
-    *drivers = d;
+void Team::setDrivers(Driver** d){
+    drivers = d;
 }
 
 void Team::notify(){

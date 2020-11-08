@@ -8,7 +8,7 @@ class Factory {
 public:
 	virtual Team* createTeam() = 0;
 
-	virtual Vehicle* createRaceCar() = 0;
+	virtual Vehicle** createRaceCar() = 0;
 };
 
 #endif

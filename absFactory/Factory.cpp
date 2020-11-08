@@ -4,6 +4,6 @@ Team* Factory::createTeam() {
 
 }
 
-Vehicle* Factory::createRaceCar() {
+Vehicle** Factory::createRaceCar() {
     
 }

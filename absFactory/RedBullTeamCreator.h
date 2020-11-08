@@ -3,11 +3,11 @@
 
 #include "Factory.h"
 
-class RedBullTeamCreator : Factory {
+class RedBullTeamCreator : public Factory {
 public:
 	Team* createTeam();
 
-	Vehicle* createRaceCar();
+	Vehicle** createRaceCar();
 };
 
 #endif

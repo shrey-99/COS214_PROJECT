@@ -5,14 +5,14 @@
 
 Team* MclarenTeamCreator::createTeam() {
 	// TODO - implement MclarenTeamCreator2::createTeam
-	return new MclarenTeam();
+	return new McLarenTeam();
 }
 
-Vehicle* MclarenTeamCreator::createRaceCar() {
-	// TODO - implement MclarenTeamCreator2::createRaceCar
-	Vehicle* cars[2];
+Vehicle** MclarenTeamCreator::createRaceCar() {
+	// TODO - implement FerrariTeamCreator2::createRaceCar
+	Vehicle** cars = new Vehicle*[2];
 	for(int i=0; i < 2; i++) {
-		cars[i] = new RaceCar(100, "NULL", 59, 55, 57);
+		cars[i] = new RaceCar(100, "NULL", 77, 70, 65);
 	}
-	return *cars;
+	return cars;
 }
