@@ -3,6 +3,12 @@
 GrandPrix::GrandPrix() 
 {
    cout<<"Created A Grand Prix."<<endl;
+	
+   flags[0] = "Raising Green flag.";
+   flags[1] = "Raising Yellow flag.";
+   flags[2] = "Raising Red flag.";
+   flags[3] = "Raising Black flag.";
+   flags[4] = "Raising Checkered flag.";
 }
 
 GrandPrix::~GrandPrix() 
