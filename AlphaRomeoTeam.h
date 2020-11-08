@@ -1,7 +1,7 @@
 #ifndef ALPHAROMEOTEAM_H
 #define ALPHAROMEOTEAM_H
 
-#include <iostream>
+
 #include "Team.h"
 #include "Location.h"
 
