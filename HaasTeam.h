@@ -8,6 +8,8 @@ using namespace std;
 class HaasTeam : public Team {
 public:
     HaasTeam(Location*);
+    void notify();
+    
 };
 
 #endif
