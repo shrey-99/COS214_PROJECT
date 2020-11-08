@@ -31,7 +31,7 @@ void SundayEvent::race() {
 	//4.Create an iterator to traverse the aggregate
 		ConcreteIterator* iterator = myDynamicArray->createIterator(); 
 
-    //5. da actual simulation - 10 laps
+    //5. da actual simulation - 10 laps /* should be 60 laps */
 	    for (int i = 0; i < 10; ++i)
 	    {
 		    for(; iterator->hasNext(); iterator->next())
@@ -41,11 +41,22 @@ void SundayEvent::race() {
 
 			    //5.2 "update fuel"
 					iterator->updateFuel(); 
+			    
+			    /*
+			    	after updating fuel and tyreware update damage (call updateDamage() from vehicle class) 
+			    */
 
 			    //5.3 Calculate and set lap time
 					iterator->calculateLapTime(); 
 
 			    //5.4 move to next driver in race
+			    
+			     /*
+			     	check if car damge is 0 give zero points
+			    	go to pit stop after every ten laps (call vehicle notify function with the team pitcrew/observer as a parameter :example.. car->nofity(pitcrew/observer)) 
+				
+				
+			    */
 	    	}
 	    }
 
