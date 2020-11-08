@@ -18,7 +18,8 @@ void SaturdayEvent::setStartingPositions() {
         times[counter] = teams[i]->getCars()[1].calculateTime();
         cValues[counter] = counter++;
     }
-    sort(times, cValues);
+    int size = teams.size()*2;
+    sort(times, cValues, size);
     counter = 0;
     for(int i=0; i < teams.size(); i++) {
         teams[i]->getCars()[0].setPosition(getIndex(cValues, counter)+1);
@@ -29,11 +30,11 @@ void SaturdayEvent::setStartingPositions() {
     cout << "The starting positions of all the drivers were set" << endl;
 }
 
-void SaturdayEvent::sort(int times[], int cValues[]) { 
-    /*for(int i = 0; i < 20; i++) {
+void SaturdayEvent::sort(int times[], int cValues[], int size) { 
+    /*for(int i = 0; i < size; i++) {
       cout <<times[i]<<"\t";
     }*/
-    for(int k = 1; k < 20; k++) {
+    for(int k = 1; k < size; k++) {
         int temp = times[k];
         int cTemp = cValues[k];
         int j = k-1;
@@ -46,7 +47,7 @@ void SaturdayEvent::sort(int times[], int cValues[]) {
         cValues[j+1] = cTemp;
     }
     /*cout<<"\nSorted list is \n";
-    for(int i=0; i < 20; i++) {
+    for(int i=0; i < size; i++) {
         cout << times[i] << "\t";
     }*/
 }

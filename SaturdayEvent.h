@@ -12,7 +12,7 @@ public:
     virtual void performEvent();
     void setStartingPositions();
 private:
-    void sort(int*, int*);
+    void sort(int*, int*, int);
     int getIndex(int*, int);
 };
 
