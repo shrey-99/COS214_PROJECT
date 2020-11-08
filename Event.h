@@ -14,7 +14,7 @@ public:
     ~Event();
     virtual void performEvent() = 0;
     vector<Team*> getTeam();
-    virtual simulator(Team*){};
+    virtual void simulator(Team*){};
     void addteam(Team*);
 
 private:
