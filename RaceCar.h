@@ -37,9 +37,11 @@ public:
     void setTyres(string);
     void setTyreWare(int);
     int calculateTime();
+    
     // command pattern
     void startEngine();
     void stopEngine();
+    
     void notify(observer*);
     void updateDamage();
     void increaseSpecs();
