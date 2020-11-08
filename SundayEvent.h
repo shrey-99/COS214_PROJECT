@@ -1,10 +1,10 @@
 #ifndef SUNDAYEVENT_H
 #define SUNDAYEVENT_H
 
+#include <iostream>
 #include "Event.h"
 #include "Command.h"
 #include "RacingLights.h"
-#include <iostream>
 
 class SundayEvent : public Event {
 private:
