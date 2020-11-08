@@ -85,7 +85,7 @@ void RaceCar::setTyreWare(int tw){
 }
 
 int RaceCar::calculateTime() {
-	int sec = (acceleration + braking + handling + damage)/TyreWare;
+	int sec = (acceleration + braking + handling + damage)*TyreWare/getFuel();
 	return sec;
 }
 
