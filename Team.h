@@ -30,6 +30,7 @@ public:
     Driver* getDrivers();
     void setCars(Vehicle*);
     void setDrivers(Driver*);
+    virtual void notify();
 };
 
 #endif
