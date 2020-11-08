@@ -10,7 +10,7 @@ using namespace std;
 class FridayEvent : public Event {
 public:
     FridayEvent(string);
-    virtual void performEvent();
+    void performEvent();
     void simulator(Team*);
     void windTunnel(Vehicle*);
 };
