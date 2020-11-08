@@ -9,7 +9,7 @@ using namespace std;
 class SaturdayEvent : public Event {
 public:
     SaturdayEvent(string);
-    virtual void performEvent();
+    void performEvent();
     void setStartingPositions();
 private:
     void sort(int*, int*, int);
