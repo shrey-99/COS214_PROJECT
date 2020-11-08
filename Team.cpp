@@ -35,3 +35,7 @@ void Team::setCars(Vehicle* v){
 void Team::setDrivers(Driver* d){
     drivers = d;
 }
+
+void Team::notify(){
+  cout<<teamName+" has finished simulating"<<endl;
+}
