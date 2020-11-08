@@ -9,6 +9,10 @@
 using namespace std;
 
 class Event {
+private:
+    string eventName;
+protected:
+    vector<Team*> teams;
 public:
     Event(string);
     ~Event();
@@ -16,14 +20,6 @@ public:
     vector<Team*> getTeam();
     virtual void simulator(Team*){};
     void addteam(Team*);
-
-private:
-    string eventName;
-    
-protected:
-    vector<Team*> teams;
-    
-
 };
 
 #endif
