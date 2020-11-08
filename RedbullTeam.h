@@ -9,6 +9,7 @@ using namespace std;
 class RedbullTeam : public Team {
 public:
     RedbullTeam(Location*);
+    void notify();
 };
 
 #endif
