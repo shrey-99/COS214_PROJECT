@@ -24,6 +24,7 @@ public:
     virtual void stopEngine(){};
     virtual void notify(observer*){};
     virtual int calculateTime(){return 0;};
+    virtual int getDamage(){return 0;};
     virtual void increaseSpecs(){};
     virtual void setPosition(int){};
     virtual void updateDamage(){};
