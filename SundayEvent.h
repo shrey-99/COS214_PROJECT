@@ -13,7 +13,7 @@ private:
     Command* end;
 public:
     SundayEvent(string, Command*, Command*);
-    virtual void performEvent();
+    void performEvent();
     void race();
     void startRace();
     void endRace();
