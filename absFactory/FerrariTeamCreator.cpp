@@ -11,7 +11,7 @@ Vehicle* FerrariTeamCreator::createRaceCar() {
 	// TODO - implement FerrariTeamCreator2::createRaceCar
 	Vehicle* cars[2];
 	for(int i=0; i < 2; i++) {
-		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+		cars[i] = new RaceCar(100, "NULL", 72, 86, 75);
 	}
 	return *cars;
 }

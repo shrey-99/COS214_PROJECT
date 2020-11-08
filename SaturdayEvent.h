@@ -11,6 +11,9 @@ public:
     SaturdayEvent(string);
     virtual void performEvent();
     void setStartingPositions();
+private:
+    void sort(int*, int*);
+    int getIndex(int*, int);
 };
 
 #endif

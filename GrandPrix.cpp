@@ -7,7 +7,7 @@ GrandPrix::GrandPrix()
 
 GrandPrix:: ~GrandPrix() 
 {
-	 cout<<"Grand Prix Deleted."<<endl;
+	cout<<"Grand Prix Deleted."<<endl;
 	delete location;
 }
 

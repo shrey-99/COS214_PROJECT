@@ -11,7 +11,7 @@ Vehicle* RedBullTeamCreator::createRaceCar() {
 	// TODO - implement RedBullTeamCreator2::createRaceCar
 	Vehicle* cars[2];
 	for(int i=0; i < 2; i++) {
-		cars[i] = new RaceCar(100, "NULL", 50, 30, 50);
+		cars[i] = new RaceCar(100, "NULL", 83, 77, 82);
 	}
 	return *cars;
 }

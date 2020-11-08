@@ -25,6 +25,7 @@ public:
     virtual void notify(observer*){}; // called in car's startEngine function
     virtual int calculateTime(){};
     virtual void increaseSpecs(){};
+    virtual void setPosition(int){};
 };
 
 #endif

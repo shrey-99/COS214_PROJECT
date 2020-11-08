@@ -5,7 +5,7 @@ Event::Event(string name) {
 }
 
 Event::~Event() {
-
+    
 }
 
 void Event::performEvent() {
