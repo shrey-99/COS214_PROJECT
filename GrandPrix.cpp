@@ -18,6 +18,6 @@ void GrandPrix::setLocation(Location* location)
 
 string* GrandPrix::getFlags()
 {
-    return flags;
+    return *flags;
 }
 
