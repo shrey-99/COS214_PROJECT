@@ -128,3 +128,9 @@ void RaceCar::notify(observer* pit){
 	pit->getcar(this);
 	pit->checkVehicle();
 }
+
+void RaceCar::increaseSpecs(){
+  acceleration++;
+  braking++;
+  handling++;
+}
