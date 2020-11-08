@@ -15,3 +15,7 @@ void Event::performEvent() {
 vector<Team*> Event::getTeam() {
     return teams;
 }
+
+void Event::addteam(Team* t) {
+    teams.push_back(t);
+}
