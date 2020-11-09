@@ -2,16 +2,18 @@
 #define COMMAND_H
 #include <iostream>
 #include <string>
-#include "Vehicle.h"
+#include "Team.h"
 using namespace std;
 
 class Command
 {
 	private:
-		Vehicle* receiver;
+		vector<Team*> teams;
+		//Vehicle* receiver;
 	public:	
-		Command(Vehicle*);
-		Vehicle* getReceiver();
+		Command(vector<Team*>);
+		//Command(Vehicle*);
+		//Vehicle* getReceiver();
 	
 		virtual ~Command();
 		virtual void execute() = 0;
