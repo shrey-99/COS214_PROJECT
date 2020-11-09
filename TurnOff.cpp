@@ -15,7 +15,7 @@ void TurnOff::execute()
 	vector<Team*> teams = getTeams();
 	vector<Team*>::iterator it = teams.begin();
 	
-	for (it = pitcrew.begin(); it != pitcrew.end(); ++it)
+	for (it = teams.begin(); it != teams.end(); ++it)
 	{
 		Vehicle** receiver = (*it)->getCars();
 		
@@ -33,7 +33,7 @@ void TurnOff::undo()
 	vector<Team*> teams = getTeams();
 	vector<Team*>::iterator it = teams.begin();
 	
-	for (it = pitcrew.begin(); it != pitcrew.end(); ++it)
+	for (it = teams.begin(); it != teams.end(); ++it)
 	{
 		Vehicle** receiver = (*it)->getCars();
 		
