@@ -2,6 +2,7 @@
 #define COMMAND_H
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Team.h"
 using namespace std;
 
