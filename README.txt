@@ -1,4 +1,4 @@
 214 Project
 
 Team Members:
-- Myron Maugi u18246932
+- u18246932 Myron Maugi
