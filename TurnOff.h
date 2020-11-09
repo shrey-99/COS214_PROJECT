@@ -6,7 +6,8 @@ using namespace std;
 class TurnOff : public Command
 {
 	public:	
-		TurnOff(Vehicle*);
+		TurnOff(vector<Team*>);
+		//TurnOff(Vehicle*);
 		~TurnOff();
 		void execute();
 		void undo();
