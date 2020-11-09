@@ -1,8 +1,8 @@
 #include "Command.h"
 
-Command::Command(Vehicle* r) // constructor 
+Command::Command(vector<Team*> teams) // constructor 
 {
-	receiver = r;
+	receiver = teams;
 }
 
 Command::~Command() // virtual 
@@ -10,7 +10,7 @@ Command::~Command() // virtual
 	
 }
 
-Vehicle* Command::getReceiver() 
+vector<Team*> Command::getReceiver() 
 {
 	return receiver;
 }
