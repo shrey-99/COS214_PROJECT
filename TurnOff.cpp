@@ -1,6 +1,6 @@
 #include "TurnOff.h"
 
-TurnOff::TurnOff(Vehicle* r) : Command(r) // constructor 
+TurnOff::TurnOff(vector<Team*> t) : Command(t) // constructor 
 {
 	
 }
@@ -12,10 +12,36 @@ TurnOff::~TurnOff() // default destructor
 
 void TurnOff::execute() 
 {
-	getReceiver()->stopEngine();
+	vector<Team*> teams = getTeams();
+	vector<Team*>::iterator it = teams.begin();
+	
+	for (it = pitcrew.begin(); it != pitcrew.end(); ++it)
+	{
+		Vehicle** receiver = (*it)->getCars();
+		
+		for (int i = 0; i < 2; i++)
+		{
+			receiver[i]−>stopEngine();
+		}
+	}
+	
+	//getReceiver()->stopEngine();
 }
 
 void TurnOff::undo() 
 {
-	getReceiver()->startEngine();
+	vector<Team*> teams = getTeams();
+	vector<Team*>::iterator it = teams.begin();
+	
+	for (it = pitcrew.begin(); it != pitcrew.end(); ++it)
+	{
+		Vehicle** receiver = (*it)->getCars();
+		
+		for (int i = 0; i < 2; i++)
+		{
+			receiver[i]−>startEngine();
+		}
+	}
+	
+	//getReceiver()->startEngine();
 }
