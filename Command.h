@@ -13,6 +13,7 @@ class Command
 	public:	
 		Command(vector<Team*>);
 		//Command(Vehicle*);
+		vector<Team*> getTeams();
 		//Vehicle* getReceiver();
 	
 		virtual ~Command();
